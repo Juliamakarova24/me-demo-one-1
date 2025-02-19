@@ -1,0 +1,117 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Inter Tight", sans-serif;
+  /* color: #434455;
+  background-color: #ffffff; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Це прибирає стандартні маркери та відступи. */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Використовується для приховування елементів з екрана */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* common */
+
+.container {
+  width: 100%; /* робить контейнер гнучким */
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+    padding: 0 100px;
+  }
+}
+
+/* --------HEADER--------- */
+
+.header {
+  background-color: #576f35;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icon-menu {
+  fill: #fbfbfb;
+}
+
+.header-icon-btn {
+  fill: #fbfbfb;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: #fbfbfb;
+  width: 168px;
+  height: 16px;
+}
+
+.header-nav {
+}
+/* --------------Сховал------- */
+.header-list {
+  display: none;
+}
+.header-btn {
+  display: none;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
