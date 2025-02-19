@@ -92,7 +92,7 @@ img {
   align-items: center;
 }
 
-.header-icon-menu {
+.header-icon-vector {
   fill: #fbfbfb;
   margin-right: 4px;
 }
@@ -100,27 +100,21 @@ img {
   fill: #fbfbfb;
 }
 
-.header-icon-btn {
+.header-icon-menu {
   fill: #fbfbfb;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  color: #fbfbfb;
-  width: 168px;
-  height: 16px;
 }
 
 .header-nav {
 }
+
 /* --------------Сховал------- */
 .header-list {
   display: none;
 }
 .header-btn {
-  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
