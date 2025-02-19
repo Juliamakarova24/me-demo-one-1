@@ -83,11 +83,20 @@ img {
 }
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-icon-menu {
+  fill: #fbfbfb;
+  margin-right: 4px;
+}
+.header-icon-text {
   fill: #fbfbfb;
 }
 
