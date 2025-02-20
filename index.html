@@ -20,39 +20,61 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>GREEN.HARVEST</title>
   </head>
-</html>
-<body>
-  <header class="header">
-    <div class="container header-container">
-      <nav class="header-nav">
-        <!-- Иконка бургер-меню -->
-        <svg class="header-icon-vector" width="16" height="16">
-          <use href="./images/icons.svg#icon-vector"></use>
-        </svg>
 
-        <!--Логотип-->
-
-        <a href="./index.html" class="header-logo"
-          ><svg class="header-icon-text" width="148" height="12">
-            <use href="./images/icons.svg#icon-text-1"></use>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <!-- Иконка бургер-меню -->
+          <svg class="header-icon-vector" width="16" height="16">
+            <use href="./images/icons.svg#icon-vector"></use>
           </svg>
-        </a>
 
-        <ul class="header-list">
-          <li class="header-item">How it Works</li>
-          <li class="header-item">Vegetables</li>
-          <li class="header-item">Reviews</li>
-        </ul>
-      </nav>
+          <!--Логотип-->
 
-      <button class="header-btn" type="button">
-        <svg class="header-icon-menu" width="32" height="32">
-          <use href="images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </div>
-  </header>
+          <a href="./index.html" class="header-logo"
+            ><svg class="header-icon-text" width="148" height="12">
+              <use href="./images/icons.svg#icon-text-1"></use>
+            </svg>
+          </a>
 
-  <main></main>
-  <footer></footer>
-</body>
+          <ul class="header-list">
+            <li class="header-item">How it Works</li>
+            <li class="header-item">Vegetables</li>
+            <li class="header-item">Reviews</li>
+          </ul>
+        </nav>
+
+        <button class="header-btn" type="button" data-mobile-open>
+          <svg class="header-icon-menu" width="32" height="32">
+            <use href="images/icons.svg#icon-menu-alt-1"></use>
+          </svg>
+        </button>
+      </div>
+      <!--MOBIL-MENU-->
+      <div class="mobile-menu" data-mobile>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-btn" type="button" data-mobile-close>
+            <svg class="mobile-icon-close" width="32" height="32">
+              <use href="images/icons.svg#icon-component"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">How it Works</li>
+              <li class="mobile-nav-item">Vegetables</li>
+              <li class="mobile-nav-item">Reviews</li>
+            </ul>
+
+            <button class="mobile-shop" type="button">SNOP NOW</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <footer></footer>
+    <script src="./js/mobile.js"></script>
+  </body>
+</html>
