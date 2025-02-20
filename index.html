@@ -24,27 +24,37 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <!-- Иконка бургер-меню -->
+        <div class="header-logo-gren">
           <svg class="header-icon-vector" width="16" height="16">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
 
           <!--Логотип-->
-
           <a href="./index.html" class="header-logo"
             ><svg class="header-icon-text" width="148" height="12">
               <use href="./images/icons.svg#icon-text-1"></use>
             </svg>
           </a>
+        </div>
 
+        <!-- Навигационное меню -->
+        <nav class="header-nav">
           <ul class="header-list">
-            <li class="header-item">How it Works</li>
-            <li class="header-item">Vegetables</li>
-            <li class="header-item">Reviews</li>
+            <li class="header-item">
+              <a href="" class="header-link"> How it Works</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">Vegetables</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">Reviews</a>
+            </li>
           </ul>
-        </nav>
 
+          <!-- Кнопка SHOP NOW -->
+          <button class="header-shop" type="button">SHOP NOW</button>
+        </nav>
+        <!-- Кнопка для мобильного меню -->
         <button class="header-btn" type="button" data-mobile-open>
           <svg class="header-icon-menu" width="32" height="32">
             <use href="images/icons.svg#icon-menu-alt-1"></use>
@@ -67,7 +77,7 @@
               <li class="mobile-nav-item">Reviews</li>
             </ul>
 
-            <button class="mobile-shop" type="button">SNOP NOW</button>
+            <button class="mobile-shop" type="button">SHOP NOW</button>
           </nav>
         </div>
       </div>
