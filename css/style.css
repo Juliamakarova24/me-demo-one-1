@@ -6,8 +6,6 @@
 body {
   margin: 0 auto;
   font-family: "Inter Tight", sans-serif;
-  /* color: #434455;
-  background-color: #ffffff; */
 }
 
 a {
@@ -58,8 +56,9 @@ button {
 /* common */
 
 .container {
-  width: 100%; /* робить контейнер гнучким */
-  min-width: 375px;
+  min-width: 320px;
+  max-width: 100%;
+  max-width: 375px;
   padding: 0px 20px;
   margin: 0 auto;
 }
@@ -94,6 +93,7 @@ button {
   padding-top: 20px;
   margin: 0 auto;
 }
+
 .header-logo-gren {
   display: flex;
   align-items: center;
@@ -132,22 +132,33 @@ button {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: -100%;
+  /* left: 0; */
   width: 100%;
   height: 100%;
   background-color: #576f35;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: right 0.3s ease-in-out;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
+  right: 0;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
+@media (min-width: 750px) {
+  .mobile-menu {
+    width: 50%; /* Займає половину екрану */
+    right: -50%; /* Початково ховається */
+  }
+}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 296px;
@@ -227,13 +238,6 @@ button {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media screen and (min-width: 767px) {
-  .mobile-menu,
-  .mobile-menu.is-open {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header-container {
     padding-top: 32px;
@@ -251,35 +255,6 @@ button {
     height: 17px;
   }
 }
-
-/* @media screen and (max-width: 767px) {
-  .mobile-menu {
-    width: 100%;
-    transform: translateX(0);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-} */
-/* @media screen and (min-width: 768px) {
-  .mobile-menu {
-    position: fixed; 
-    width: 320px;
-    right: -800px; 
-    top: 0; 
-    bottom: 0; 
-    transition: transform 0.3s ease-in-out; 
-  }
-  .mobile-menu.is-open {
-    transform: translateX(320px); 
-  }
-} */
 
 @media screen and (min-width: 1280px) {
   .header-btn {
