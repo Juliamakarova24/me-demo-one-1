@@ -1,91 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" />Этот тег <link> добавляет фавикон (иконку сайта) в браузер. -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Green Harvest</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="/css/style.css" />
+      <title>GREEN.HARVEST</title>
+    </head>
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <!-----Logo------->
+    <div class="header-logo-green-harvest">
+      <a href="#" class="header-icons">
+        <svg class="header-icons-logo" width="16" height="16">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+        <svg class="header-logo-green" width="148" height="12">
+          <use href="/images/icons.svg#logo-green-harvest"></use>
+        </svg>
+      </a>
+    </div>
+    <!-------NAV-------->
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#howitworks" class="header-link"> How lt Works</a>
+        </li>
+        <li class="header-item">
+          <a href="#vegetables" class="header-link">Vegetables</a>
+        </li>
+        <li class="header-item">
+          <a href="#reviews" class="header-link">Reviews</a>
+        </li>
+      </ul>
+      <!-- Кнопка SHOP NOW -->
+      <button class="header-shop" type="button">SHOP NOW</button>
+    </nav>
+    <!-- Кнопка для мобильного меню -->
+    <button class="header-btn" type="button" data-modal-open>
+      <svg class="header-icon-burger-menu" width="32" height="32">
+        <use href="/images/icons.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+      </header>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <title>GREEN.HARVEST</title>
-  </head>
+      <main>
+        <!--SECTION HERO-->
+        <section class="hero">
+          <div class="container hero-container">
+            <div class="hero-wrap">
+              <h1 class="hero-title"> organic vegetables to your diet today!</h1>
+              <p class="hero-text">Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p>
+            </div>
+            <div class="hero-img"></div>
+          </div>
+        </section>
 
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <div class="header-logo-gren">
-          <svg class="header-icon-vector" width="16" height="16">
-            <use href="./images/icons.svg#icon-vector"></use>
-          </svg>
 
-          <!--Логотип-->
-          <a href="./index.html" class="header-logo"
-            ><svg class="header-icon-text" width="148" height="12">
-              <use href="./images/icons.svg#icon-text-1"></use>
-            </svg>
-          </a>
-        </div>
+<!--  SECNION How it works -->
+        <section class="how-it-works">
+<div class="container how-it-works-container">
 
-        <!-- Навигационное меню -->
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="" class="header-link"> How it Works</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link">Vegetables</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link">Reviews</a>
-            </li>
-          </ul>
+  <h2 class="visually-hidden">How it Works
+  </h2>
 
-          <!-- Кнопка SHOP NOW -->
-          <button class="header-shop" type="button">SHOP NOW</button>
-        </nav>
-        <!-- Кнопка для мобильного меню -->
-        <button class="header-btn" type="button" data-mobile-open>
-          <svg class="header-icon-menu" width="32" height="32">
-            <use href="images/icons.svg#icon-menu-alt-1"></use>
-          </svg>
-        </button>
-      </div>
+  <div class="how-it-works-img">
+    <picture>
+        <source srcset="
+        /images/how/how-des@1x.webp 1x,
+        /images/how/how-des@2x.webp 2x"
+          media="(min-width: 1280px)"
+          />
+        <source srcset="
+        /images/how/how-tab@1x.webp 1x,
+        /images/how/how-tab@2x.webp 2x" 
+        media="(min-width: 768px)"/>
+        <source srcset="
+        /images/how/how-mob@1x.webp 1x,
+        /images/how/how-mob@2x.webp 2x"
+          media="(min-width: 320px)">
+        <img 
+        src="/images/how/how-des@1x.webp" 
+        alt="girl in the kitchen" 
+        width="640" 
+        height="640" 
+        class="how-img">
+      </picture>
+  </div>
 
-      <!--MOBIL-MENU-->
-      <div class="mobile-menu" data-mobile>
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-btn" type="button" data-mobile-close>
-            <svg class="mobile-icon-close" width="32" height="32">
-              <use href="images/icons.svg#icon-component"></use>
-            </svg>
-          </button>
+  <div class="how-it-works-wrap">
+    <h3 class="how-it-works-title">To order your  <span class="how-it-works-span">vegetable</span>  basket, simply follow these  <span class="how-it-works-span">easy steps</span> </h3>
+    <p class="how-it-works-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit without ever leaving your home.</p>
+   <ol class="how-it-works-list">
+    <li class="how-it-works-item">
+      Just choose <span class="how-item-span">the vegetable</span> you want to order by clicking on the checkboxes  <span class="how-item-span">next to it</span>.</li>
+    <li class="how-it-works-item">Click on  <span class="how-item-span">the basket</span> and fill out the form.</li>
+    <li class="how-it-works-item">Sit back and relax! Your <span class="how-item-span">fresh vegetables</span> basket will be delivered.</li>
+   </ol>
+  </div>
 
-          <nav class="mobile-menu-nav">
-            <ul class="mobile-nav-list">
-              <li class="mobile-nav-item">How it Works</li>
-              <li class="mobile-nav-item">Vegetables</li>
-              <li class="mobile-nav-item">Reviews</li>
-            </ul>
-
-            <button class="mobile-shop" type="button">SHOP NOW</button>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main></main>
-    <footer></footer>
-    <script src="./js/mobile.js"></script>
-  </body>
+</div>
+        </section>
+      
+      </main>
+      <footer></footer>
+      <script src="./js/mobile.js"></script>
+    </body>
+  </html>
 </html>
